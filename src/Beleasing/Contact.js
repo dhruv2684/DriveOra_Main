@@ -20,18 +20,24 @@ const Contact = () => {
     <div>
       {/*  */}
       <Container fluid className="bele-img-2">
-        <Row className="m-0">
-          <div className="col-4 pd">
+        <Row className="m-0 justify-content-center ">
+          <div className="col-4 pd fs-1 d-md-block d-none">
             <motion.h2
               className="text-white text-center fs-md-1 fs-6 mb-5 bg-color word p-4 ms-3"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(255,255,255,0.5)" }}
+              // whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(255,255,255,0.5)" }}
               viewport={{ once: true }}
             >
               Need Help? We’re Just a Click Away!
             </motion.h2>
+          </div>
+
+          <div className='pd d-md-none d-block '>
+            <h3 className='bg-color text-center text-white p-3 mx-5 my-3'>
+              Need Help? We’re Just a Click Away!
+            </h3>
           </div>
         </Row>
       </Container>
@@ -42,7 +48,7 @@ const Contact = () => {
 
           {/* Left Box - Slide from Left */}
           <motion.div
-            className="col-lg-4 col-md-6 col-12 p-lg-5 p-3"
+            className="col-lg-4 col-md-6 col-12 p-lg-5 p-3 text-md-start text-center"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -54,7 +60,7 @@ const Contact = () => {
 
           {/* Middle Box - Fade In */}
           <motion.div
-            className="col-lg-4 col-md-6 col-12 p-lg-5 p-3"
+            className="col-lg-4 col-md-6 col-12 p-lg-5 p-3 text-md-start text-center"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
@@ -66,13 +72,13 @@ const Contact = () => {
 
           {/* Right Box - Slide from Right */}
           <motion.div
-            className="col-lg-4 col-12 p-lg-5 p-3"
+            className="col-lg-4 col-12 p-lg-5 p-3 text-md-start text-center"
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <ul className="d-flex mb-0 justify-content-md-center ps-0">
+            <ul className="d-flex mb-0 justify-content-center ps-0 ">
               {[
                 { icon: <FaFacebookF />, className: "" },
                 { icon: <FaTwitter />, className: "ps-5" },

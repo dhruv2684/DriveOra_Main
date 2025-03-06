@@ -24,7 +24,7 @@ const About = () => {
       <Container fluid className="bele-img-1 overflow-hidden"> {/* ✅ Prevent Horizontal Scroll */}
         <Row className="m-0">
           <motion.div
-            className="col-6 pd"
+            className="col-6 pd d-md-block d-none"
             initial={{ x: -50, opacity: 0 }}  // ✅ Slide-in from left
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -34,6 +34,14 @@ const About = () => {
               Trusted Car Leasing Experts for Over 15 Years
             </h2>
           </motion.div>
+
+          <div className='pd d-md-none d-block '>
+            <h3 className='bg-color text-center text-white p-3 mx-5 my-3'>
+              Trusted Car Leasing Experts for Over 15 Years
+            </h3>
+          </div>
+
+
         </Row>
       </Container>
 
