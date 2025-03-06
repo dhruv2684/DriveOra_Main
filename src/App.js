@@ -87,51 +87,35 @@ function App() {
           </Route>
 
           <Route path="/ford-enim-nibh-litora">
-            <Header />
-            <Ford />
-            <Footer />
+            <Header /><Ford /><Footer />
           </Route>
 
           <Route path="/lamborghini-rutrum-libero">
-            <Header />
-            <Lamborghini />
-            <Footer />
+            <Header /><Lamborghini /><Footer />
           </Route>
 
           <Route path="/mercedes-conubia-blandit-sem-neque">
-            <Header />
-            <Mconubia />
-            <Footer />
+            <Header /><Mconubia /><Footer />
           </Route>
 
           <Route path="/bmw-proin-commodo-interdum">
-            <Header />
-            <Bmwproin />
-            <Footer />
+            <Header /><Bmwproin /><Footer />
           </Route>
 
           <Route path="/mercedes-mattis-arcu-maximus">
-            <Header />
-            <Mattis />
-            <Footer />
+            <Header /><Mattis /><Footer />
           </Route>
 
           <Route path="/audi-litora-nec-amet" >
-            <Header />
-            <Audi />
-            <Footer />
+            <Header /><Audi /><Footer />
           </Route>
 
           <Route path="/mercedes-etiam-quam" >
-            <Header />
-            <Metiam />
-            <Footer />
+            <Header /><Metiam /><Footer />
           </Route>
 
           <Route path="/bmw-cubilia" >
-            <Header />
-            <Bmwcubilia />
-            <Footer />
+            <Header /><Bmwcubilia /><Footer />
           </Route>
 
 

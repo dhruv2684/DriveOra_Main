@@ -17,6 +17,7 @@ import fordenimnibhlitora from '../Beleasing Img/fordenimnibhlitora.jpeg'
 import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.jpeg'
 import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
+import sedan from '../Beleasing Img/sedan car.webp'
 
 const cars = [
   {
@@ -60,7 +61,7 @@ const Sedan = () => {
     <div>
 
 
-      <Container fluid className="overflow-hidden">
+      <Container fluid className="overflow-hidden mt-5">
         <Row className="align-items-center">
 
           {/* Text Section */}
@@ -88,7 +89,7 @@ const Sedan = () => {
           >
             <img
               className="mt-4"
-              src="https://themes.muffingroup.com/be/leasing2/wp-content/uploads/2023/02/beleasing2-category3.webp"
+              src={sedan}
               width="100%"
               alt="Sedan"
             />

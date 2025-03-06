@@ -13,6 +13,7 @@ import MercedesMATTIS  from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import AudiGT  from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
 import AudMERCEDESETIAM  from '../Beleasing Img/2024 Mercedes-AMG GT Coupe.jpeg'
 import BMWM4  from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
+import allcar  from '../Beleasing Img/all car.webp'
 
 
 //icon
@@ -85,7 +86,7 @@ const Allcars = () => {
   return (
     <div>
       {/*  */}
-      <Container fluid className="overflow-hidden mt-3">
+      <Container fluid className="overflow-hidden mt-5 pt-3">
         <Row className="align-items-center">
 
           {/* Left Content - Fade In from Left */}
@@ -110,7 +111,7 @@ const Allcars = () => {
           >
             <img
               className="mt-4"
-              src="https://themes.muffingroup.com/be/leasing2/wp-content/uploads/2023/03/beleasing2-category5.webp"
+              src={allcar}
               width="100%"
               alt=""
             />

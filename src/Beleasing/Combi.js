@@ -14,6 +14,7 @@ import { FaLink } from "react-icons/fa";
 import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
 import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
+import comcar from '../Beleasing Img/combi car.webp'
 
 
 const cars = [
@@ -73,7 +74,7 @@ const Combi = () => {
           >
             <img
               className="mt-4"
-              src="https://themes.muffingroup.com/be/leasing2/wp-content/uploads/2023/02/beleasing2-category1.webp"
+              src={comcar}
               width="100%"
               alt="Combi"
             />

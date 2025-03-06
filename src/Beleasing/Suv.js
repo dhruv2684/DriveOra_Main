@@ -18,6 +18,7 @@ import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
 import AudMERCEDESETIAM from '../Beleasing Img/2024 Mercedes-AMG GT Coupe.jpeg'
 import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
+import suvcar from '../Beleasing Img/suv car.webp'
 
 
 const cars = [
@@ -86,7 +87,7 @@ const Suv = () => {
         >
           <img
             className="mt-4"
-            src="https://themes.muffingroup.com/be/leasing2/wp-content/uploads/2023/02/beleasing2-category2.webp"
+            src={suvcar}
             width="100%"
             alt="SUV"
           />

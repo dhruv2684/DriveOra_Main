@@ -13,6 +13,7 @@ import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg'
 import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.jpeg'
 import MERCEDESCob from '../Beleasing Img/marsci.jpeg'
 import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
+import hhatchback from '../Beleasing Img/hatchback car.webp'
 
 const cars = [
   {
@@ -77,7 +78,7 @@ const Hatchback = () => {
           >
             <img
               className="mt-4"
-              src="https://themes.muffingroup.com/be/leasing2/wp-content/uploads/2023/02/beleasing2-category4.webp"
+              src={hhatchback}
               width="100%"
               alt="Hatchback"
             />

@@ -109,13 +109,7 @@ const Mconubia = () => {
         </Row>
       </Container>
 
-      {/* Car presentation */}
-      <Container fluid className='pt-5 pb-5 bg-light position-relative'>
-        <Row className='justify-content-center'>
-          <img className='' src="https://themes.muffingroup.com/be/leasing2/wp-content/uploads/2023/02/beleasing2-section-bg3.webp" width="100%" alt="" />
-          <Button variant="light bele-img-3"><FaPlay className='me-3' />Car presentation</Button>{' '}
-        </Row>
-      </Container>
+   
 
       {/*  */}
       <Container fluid className='pt-5 pb-5 bg-light'>
