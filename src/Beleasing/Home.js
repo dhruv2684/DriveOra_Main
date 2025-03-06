@@ -71,13 +71,26 @@ const Home = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-white fs-md-1 mb-md-5 mb-2">
+            <h2 className="text-white d-md-block d-none fs-md-1 mb-md-5 mb-2">
               DRIVE YOUR DREAM CAR <br /> WITH OUR LEASING PLANS
             </h2>
+            {/* MObile */}
+            <h4 className="text-white d-md-none d-block fs-md-1 mb-md-5 mb-2">
+              DRIVE YOUR DREAM CAR  WITH OUR LEASING PLANS
+            </h4>
             <Button
               href='/all-cars'
               variant=""
-              className='b-color text-white rounded-0 border-0 ps-md-4 ps-3 pe-md-4 pe-3 pt-md-3 pt-2 pb-md-3 pb-2'
+              className='b-color d-md-none d-block text-white mt-3  rounded-0 border-0 ps-md-4 ps-2 pe-md-4 pe-2 pt-md-3 pt- pb-md-3 pb-2'
+            >
+              UNLOCK YOUR CAR <FaArrowRight className='ms-3' />
+            </Button>
+
+
+            <Button
+              href='/all-cars'
+              variant=""
+              className='b-color text-white d-md-inline-block d-none rounded-0 border-0 ps-md-4 ps-3 pe-md-4 pe-3 pt-md-3 pt-2 pb-md-3 pb-2'
             >
               UNLOCK YOUR CAR <FaArrowRight className='ms-3' />
             </Button>
@@ -90,16 +103,7 @@ const Home = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <div className='border ps-5 pe-5 pt-4'>
-              <div className="d-flex pt-4 pb-4 border-bottom">
-                <FaStar className='text-white' />
-                <FaStar className='text-white ms-2' />
-                <FaStar className='text-white ms-2' />
-                <FaStar className='text-white ms-2' />
-                <FaStar className='text-white ms-2' />
-              </div>
-              <p className='mt-4 mb-0 text-white'>SALES QUALITY</p>
-            </div>
+            
           </motion.div>
         </Row>
 
@@ -145,7 +149,7 @@ const Home = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <div className="hov-up d-md-flex">
+            <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={sedan} width="260px" height="145px" alt="Sedan" />
               </div>
@@ -164,7 +168,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="hov-up d-md-flex">
+            <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={hatchback} width="260px" height="145px" alt="Hatchback" />
               </div>
@@ -183,7 +187,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <div className="hov-up d-md-flex">
+            <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={combi} width="260px" height="145px" alt="Combi" />
               </div>
@@ -202,7 +206,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="hov-up d-md-flex">
+            <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={suv} width="260px" height="145px" alt="SUV" />
               </div>
@@ -221,30 +225,14 @@ const Home = () => {
         <Row className="align-items-center">
           {/* Left Side Text - Animate from Left */}
           <motion.div
-            className="col-8"
+            className=""
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h1 className="d-md-block d-none">1,200+ CARS WAITING FOR YOU!</h1>
-            <h1 className="fs-6 d-md-none d-block">1,200+ CARS WAITING FOR YOU!</h1>
-          </motion.div>
-
-          {/* Right Side Button - Animate from Right */}
-          <motion.div
-            className="col-4 d-flex justify-content-end"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <Button
-              href="/all-cars"
-              variant="light rounded-0 fw-bold border-0 ps-md-4 ps-2 pe-md-4 pe-2 pt-ms-2 pt-1 pb-md-2 pb-1"
-            >
-              SEE ALL <FaArrowRight className="ms-md-3 d-md-block d-none" />
-            </Button>
+            <h1 className="d-md-block d-none text-center">1,200+ CARS WAITING FOR YOU!</h1>
+            <h1 className="fs-6 d-md-none d-block text-center">1,200+ CARS WAITING FOR YOU!</h1>
           </motion.div>
         </Row>
 
@@ -284,8 +272,8 @@ const Home = () => {
                   <h5>{car.name}</h5>
                   <div className="d-flex mt-4 align-items-center justify-content-between">
                     <p className="mb-0">Check details</p>
-                    <a href={car.link}>
-                      <FaArrowRight className="text-dark" />
+                    <a href={car.link} className='text-dark'>
+                      View All <FaArrowRight className="text-dark" />
                     </a>
                   </div>
                 </div>
@@ -481,7 +469,7 @@ const Home = () => {
 
         {/* Counter Section */}
         <Container fluid className="count mb-5">
-          <Row>
+          <Row className=''>
             {[
               { title: "ALL CARS AVAILABLE", value: "1200" },
               { title: "KINDS OF OUR CARS", value: "08" },
@@ -490,15 +478,15 @@ const Home = () => {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className={`col-md-3 col-6 mb-md-0 mb-1 p-0 ${index !== 0 ? "ps-1" : ""}`}
+                className={`col-md-3 col-6 mb-md-0 mb-1 p-0 ${index !== 0 ? "" : ""}`}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <div className="p-md-5 p-3 bg-white shadow-lg ">
-                  <h6 className="">{item.title}</h6>
-                  <span className="fs-1">{item.value}</span>
+                <div className="p-md-5 p-2 bg-white shadow-lg video-box m-1">
+                  <h6 className="p-0 fs mb-1">{item.title}</h6>
+                  <span className="fs-md-1 fs-4">{item.value}</span>
                 </div>
               </motion.div>
             ))}
@@ -665,3 +653,22 @@ const Home = () => {
 }
 
 export default Home;
+
+
+
+
+// {/* Right Side Button - Animate from Right */}
+// <motion.div
+// className="col-4 d-flex justify-content-end"
+// initial={{ x: 100, opacity: 0 }}
+// whileInView={{ x: 0, opacity: 1 }}
+// transition={{ duration: 1 }}
+// viewport={{ once: true }}
+// >
+// <Button
+//   href="/all-cars"
+//   variant="light rounded-0 fw-bold border-0 ps-md-4 ps-2 pe-md-4 pe-2 pt-ms-2 pt-1 pb-md-2 pb-1"
+// >
+//   SEE ALL <FaArrowRight className="ms-md-3 d-md-block d-none" />
+// </Button>
+// </motion.div>

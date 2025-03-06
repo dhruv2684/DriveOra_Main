@@ -14,11 +14,12 @@
     font-style: normal;
 }
 
-.text-color_hdr{
+.text-color_hdr {
     color: #ffff;
     background-color: #16182d;
 }
-.text-color_hdr:hover{
+
+.text-color_hdr:hover {
     color: #ffff;
     background-color: #16182d;
 }
@@ -35,7 +36,7 @@
     width: 100%;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: 0px solid #ffffff00 !important;
 }
 
@@ -106,10 +107,10 @@
     background-size: cover;
     background-position: center;
 }
-  
+
 
 .pd {
-    padding: 25% 0% 5% 0%;
+    padding: 30% 0% 5% 0%;
 }
 
 .bele-img-1 {
@@ -286,34 +287,60 @@
 /* ---------------- CHNAGES FOR LIVE  */
 /* Dropdown menu styling */
 .custom-dropdown .dropdown-menu {
-    background-color: #212529 !important; /* Dark Background */
+    background-color: #16182d !important;
+    /* Dark Background */
     border-radius: 8px;
     padding: 10px;
     min-width: 220px;
-    border: 1px solid #343a40; /* Dark Border */
-  }
-  
-  /* Dropdown item styling */
-  .custom-dropdown .dropdown-item {
-    color: #ffffff !important; /* White Text */
+    border: 1px solid #343a40;
+    /* Dark Border */
+}
+
+/* Dropdown item styling */
+.custom-dropdown .dropdown-item {
+    color: #ffffff !important;
+    /* White Text */
     padding: 12px 15px;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     border-radius: 5px;
-  }
-  
-  /* Hover effect on dropdown items */
-  .custom-dropdown .dropdown-item:hover {
-    background-color: #b4afaf !important; /* Blue Background */
-    color: black !important;
-    font-weight: 600;
-    transform: translateX(5px); /* Slight Move Effect */
-  }
-  
-  /* Divider styling */
-  .custom-dropdown .dropdown-divider {
-    border-color: rgba(255, 255, 255, 0.2);
-  }
+}
 
-  .border-bottom_text{
+/* Hover effect on dropdown items */
+.custom-dropdown .dropdown-item:hover {
+    background-color: #2d2f47b6 !important;
+    /* Blue Background */
+    color: white !important;
+    font-weight: 600;
+    transform: translateX(5px);
+    /* Slight Move Effect */
+}
+
+/* Divider styling */
+.custom-dropdown .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.border-bottom_text {
     border-bottom: 1px solid #16182d;
-  }
+}
+
+.video-box {
+    height: 150px;
+    padding: 10px;
+}
+.fs{
+    font-size: 18px;
+}
+@media (max-width:767px) {
+    .video-box {
+        height: 70px;
+    }
+
+    .count {
+        position: absolute;
+        bottom: -140px;
+    }
+    .fs{
+        font-size: 12px;
+    }
+}
