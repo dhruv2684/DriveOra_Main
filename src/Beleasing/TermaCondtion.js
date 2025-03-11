@@ -4,9 +4,9 @@ import { Card, Container } from 'react-bootstrap'
 const TermaCondtion = () => {
     return (
         <div>
-            <Container className="my-5 pt-5">
+            <Container className="my-md-5 my-3 pt-md-5 pt-3 ">
                 <div className="row">
-                    <div className="col-8">
+                    <div className="col-lg-8 col-12">
                         <Card className="shadow-lg p-4 border-0">
                             <Card.Body>
                                 <h1 className="text-center mb-4">Terms and Conditions</h1>
@@ -60,8 +60,8 @@ const TermaCondtion = () => {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-4 sticky-sidebar">
-                        <Card className="shadow-lg p-4 border-0 sticky-sidebar">
+                    <div className="col-lg-4 col-12 ">
+                        <Card className="shadow-lg p-4 border-0">
                             <Card.Body>
                                 <h1 className="text-center mb-4">Most Popular Cars in driveOra</h1>
                                 <p className="text-center text-muted">Discover the top luxury cars available on driveOra.</p>
