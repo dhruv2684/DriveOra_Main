@@ -17,8 +17,8 @@ import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg'
 import fordenimnibhlitora from '../Beleasing Img/fordenimnibhlitora.jpeg'
 import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.jpeg'
 import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
-import audi from '../Beleasing Img/main car.webp'
-import incar from '../Beleasing Img/car in.webp'
+import audi from '../DriveOra Image/2.1 car.jpg'
+import incar from '../DriveOra Image/2.2 car.jpg'
 import phonecar from '../Beleasing Img/car with phone.png'
 import img1 from '../Beleasing Img/buy to driveora.jpeg'
 
@@ -53,39 +53,25 @@ const Home = () => {
 
   return (
     <div>
-      {/* for Ad */}
-      {/* <div>
-        <div className=''>
-          <img width="100%" height="200px" src={ad2} alt="" />
-        </div>
-      </div> */}
-
-
-      {/* main img */}
+      {/* IMG */}
       <Container fluid className='bele-img mt-1'>
         <Row className='m-0'>
-          {/* Left Side Content with Animation */}
-          <motion.div
-            className="col-8 pd"
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
+          {/* Left Side Content */}
+          <div className="col-8 pd">
             <h2 className="text-white d-md-block d-none fs-md-1 mb-md-5 mb-2">
               DRIVE YOUR DREAM CAR <br /> WITH OUR LEASING PLANS
             </h2>
-            {/* MObile */}
+            {/* Mobile */}
             <h4 className="text-white d-md-none d-block fs-md-1 mb-md-5 mb-2">
               DRIVE YOUR DREAM CAR  WITH OUR LEASING PLANS
             </h4>
             <Button
               href='/all-cars'
               variant=""
-              className='b-color d-md-none d-block text-white mt-3  rounded-0 border-0 ps-md-4 ps-2 pe-md-4 pe-2 pt-md-3 pt- pb-md-3 pb-2'
+              className='b-color d-md-none d-block text-white mt-3 rounded-0 border-0 ps-md-4 ps-2 pe-md-4 pe-2 pt-md-3 pt- pb-md-3 pb-2'
             >
               UNLOCK YOUR CAR <FaArrowRight className='ms-3' />
             </Button>
-
 
             <Button
               href='/all-cars'
@@ -94,61 +80,34 @@ const Home = () => {
             >
               UNLOCK YOUR CAR <FaArrowRight className='ms-3' />
             </Button>
-          </motion.div>
+          </div>
 
-          {/* Right Side Content with Animation */}
-          <motion.div
-            className="col-md-4 pd justify-content-end d-flex d-md-block d-none"
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            
-          </motion.div>
+          {/* Right Side Content */}
+          <div className="col-md-4 pd justify-content-end d-flex d-md-block d-none">
+          </div>
         </Row>
 
-        {/* Bottom Steps with Animation */}
+        {/* Bottom Steps */}
         <Row className='pb-5'>
-          <motion.div
-            className="col-4 d-md-block d-none"
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
+          <div className="col-4 d-md-block d-none">
             <h6 className="pt-4 mb-4 border-top text-white">1. CHOOSE FROM 1,200 NEW CARS</h6>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="col-4 d-md-block d-none"
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.7 }}
-          >
+          <div className="col-4 d-md-block d-none">
             <h6 className="pt-4 mb-4 border-top text-white">2. CHOOSE EQUIPMENT</h6>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="col-4 d-md-block d-none"
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.9 }}
-          >
+          <div className="col-4 d-md-block d-none">
             <h6 className="pt-4 mb-4 border-top text-white">3. CONTACT US</h6>
-          </motion.div>
+          </div>
         </Row>
       </Container>
 
       {/* 4 car with hover  */}
       <Container fluid className="pt-5" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
-          {/* SEDAN - Left Side Animation */}
-          <motion.div
-            className="col-lg-6 col-12 hov-up"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* SEDAN - Left Side */}
+          <div className="col-lg-6 col-12 hov-up">
             <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={sedan} width="260px" height="145px" alt="Sedan" />
@@ -158,16 +117,10 @@ const Home = () => {
                 <p>Luxury, efficiency, and smooth handling.</p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          {/* HATCHBACK - Right Side Animation */}
-          <motion.div
-            className="col-lg-6 col-12"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
+          {/* HATCHBACK - Right Side */}
+          <div className="col-lg-6 col-12">
             <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={hatchback} width="260px" height="145px" alt="Hatchback" />
@@ -177,16 +130,10 @@ const Home = () => {
                 <p>Spacious and perfect for urban streets.</p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          {/* COMBI - Bottom Animation */}
-          <motion.div
-            className="col-lg-6 col-12 pt-4"
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+          {/* COMBI - Bottom */}
+          <div className="col-lg-6 col-12 pt-4">
             <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={combi} width="260px" height="145px" alt="Combi" />
@@ -196,16 +143,10 @@ const Home = () => {
                 <p>More room and comfort for long journeys.</p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          {/* SUV - Bottom Animation with More Delay */}
-          <motion.div
-            className="col-lg-6 col-12 pt-4"
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
+          {/* SUV - Bottom */}
+          <div className="col-lg-6 col-12 pt-4">
             <div className="hov-up d-md-flex text-md-start text-center">
               <div className="me-3">
                 <img src={suv} width="260px" height="145px" alt="SUV" />
@@ -215,7 +156,7 @@ const Home = () => {
                 <p>Perfect for city streets and off-road adventures.</p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </Row>
       </Container>
 
@@ -223,49 +164,33 @@ const Home = () => {
       {/* CHOOSE FROM 1,200 NEW CARS */}
       <Container fluid className="pt-5 mt-5 bg-light pb-5" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
-          {/* Left Side Text - Animate from Left */}
-          <motion.div
-            className=""
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Left Side Text */}
+          <div className="">
             <h1 className="d-md-block d-none text-center">1,200+ CARS WAITING FOR YOU!</h1>
             <h1 className="fs-6 d-md-none d-block text-center">1,200+ CARS WAITING FOR YOU!</h1>
-          </motion.div>
+          </div>
         </Row>
 
-        {/* Car Cards Animation */}
+        {/* Car Cards */}
         <Row className="mt-5">
           {[
             {
               name: "BMW COMMODO IPSUM",
               img: bmwcommodoipsum,
-              link: "/bmw-commodo-ipsum",
-              delay: 0.2,
+              link: "/bmw-commodo-ipsum"
             },
             {
               name: "FORD ENIM NIBH LITORA",
               img: fordenimnibhlitora,
-              link: "/ford-enim-nibh-litora",
-              delay: 0.4,
+              link: "/ford-enim-nibh-litora"
             },
             {
               name: "LAMBORGHINI RUTRUM LIBERO",
               img: lamborghinirutrumlibero,
-              link: "/lamborghini-rutrum-libero",
-              delay: 0.6,
+              link: "/lamborghini-rutrum-libero"
             },
           ].map((car, index) => (
-            <motion.div
-              key={index}
-              className="col-md-4 col-12"
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: car.delay }}
-              viewport={{ once: true }}
-            >
+            <div key={index} className="col-md-4 col-12">
               <div className="bg-white pb-4">
                 <img src={car.img} width="100%" alt={car.name} />
                 <div className="pt-4 ms-4 me-4">
@@ -278,7 +203,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </Row>
       </Container>
@@ -287,14 +212,8 @@ const Home = () => {
       {/* RENTING IS PURE CONVENIENCE */}
       <Container fluid className="pb-5 bg-light" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
-          {/* Left Side Text - Animate from Left */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12 text-center"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Left Side Text */}
+          <div className="col-lg-4 col-md-6 col-12 text-center">
             <h2 className="fs-1">
               SMART RENTING, <br className="d-md-block d-none" />
               SMOOTH DRIVING
@@ -309,27 +228,15 @@ const Home = () => {
             >
               CHECK YOUR CAR <FaArrowRight className="ms-3" />
             </Button>
-          </motion.div>
+          </div>
 
-          {/* Middle Car Image - Animate from Bottom */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12"
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Middle Car Image */}
+          <div className="col-lg-4 col-md-6 col-12">
             <img src={audimiddel} width="100%" alt="Luxury Audi Car with Advanced Technology & Performance" />
-          </motion.div>
+          </div>
 
-          {/* Right Side List - Animate from Right */}
-          <motion.div
-            className="col-lg-4 col-12"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Right Side List */}
+          <div className="col-lg-4 col-12">
             <ul className="p-0">
               {[
                 "Hassle-Free Maintenance & Full Service Coverage",
@@ -341,73 +248,42 @@ const Home = () => {
                 </div>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </Row>
       </Container>
+
 
 
       {/* 2 img car */}
       <Container fluid className="mb-md-5 mb-4 pb-md-5" style={{ overflowX: "hidden" }}>
         <Row>
           {/* Audi Section */}
-          <motion.div
-            className="col-lg-6 col-12 p-0 pe-lg-1 position-relative"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <motion.img
+          <div className="col-lg-6 col-12 p-0 pe-lg-1 position-relative">
+            <img
               src={audi} width="100%" alt="Audi Sports Car Ultimate Driving Experience"
-              initial={{ scale: 0.9, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
             />
-            <motion.div
-              className="pos-t text-white ms-5"
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
+            <div className="pos-t text-white ms-5">
               <Link to="">
                 <h3 className="text-white">EXPERIENCE THE POWER OF AUDI</h3>
               </Link>
               <p className="m-0">Sophisticated design meets cutting-edge performance for an unmatched drive.</p>
               <p className="m-0">Dynamic, stylish, and built for those who demand more.</p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Mercedes Section */}
-          <motion.div
-            className="col-lg-6 col-12 p-0 ps-lg-1 position-relative"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <motion.img
+          <div className="col-lg-6 col-12 p-0 ps-lg-1 position-relative">
+            <img
               src={incar} width="100%" alt="Mercedes Interior Luxury"
-              initial={{ scale: 0.9, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
             />
-            <motion.div
-              className="pos-t text-white ms-5"
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
+            <div className="pos-t text-white ms-5">
               <Link to="">
                 <h3 className="text-white">DRIVE THE FUTURE WITH MERCEDES</h3>
               </Link>
               <p className="m-0">Experience luxury, innovation, and top-tier performance in every drive.</p>
               <p className="m-0">Timeless elegance and advanced technology in every detail.</p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </Row>
       </Container>
 
@@ -417,16 +293,12 @@ const Home = () => {
         <Container>
           <Row>
             {logos.map((logo, index) => (
-              <motion.div
+              <div
                 key={index}
                 className="col-md-2 col-6 mb-md-0 mb-4 d-flex justify-content-center"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
               >
                 <img src={logo} width="80%" alt={`logo-${index}`} />
-              </motion.div>
+              </div>
             ))}
           </Row>
         </Container>
@@ -447,13 +319,7 @@ const Home = () => {
             ></video>
 
             {/* Text & Button Overlay */}
-            <motion.div
-              className="position-absolute top-50 start-0 translate-middle-y ms-5 d-lg-block d-none"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-            >
+            <div className="position-absolute top-50 start-0 translate-middle-y ms-5 d-lg-block d-none">
               <h2 className="text-white fs-1 mb-5">
                 DISCOVER THE NEXT-GEN <br />
                 CROSSOVER – SPEED, <br />
@@ -462,71 +328,50 @@ const Home = () => {
               <Button className="b-color text-white rounded-0 border-0 px-4 py-3">
                 DISCOVER MORE
               </Button>
-            </motion.div>
+            </div>
           </div>
         </Row>
 
-
         {/* Counter Section */}
         <Container fluid className="count mb-5">
-          <Row className=''>
+          <Row>
             {[
               { title: "ALL CARS AVAILABLE", value: "1200" },
               { title: "KINDS OF OUR CARS", value: "08" },
               { title: "YEARS OF WARRANTY", value: "03" },
               { title: "PRICES START FROM", value: "$12000" },
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
                 className={`col-md-3 col-6 mb-md-0 mb-1 p-0 ${index !== 0 ? "" : ""}`}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
               >
                 <div className="p-md-5 p-2 bg-white shadow-lg video-box m-1">
                   <h6 className="p-0 fs mb-1">{item.title}</h6>
                   <span className="fs-md-1 fs-4">{item.value}</span>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </Row>
         </Container>
       </Container>
 
+
       {/* HOW MUCH WILL YOU PAY? */}
       <Container fluid className="bg-light pt-5 pb-5 mt-5 overflow-hidden">
         <Row className="align-items-center">
-          {/* Left Image - Slide from Left */}
-          <motion.div
-            className="col-md-4 col-12"
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Left Image */}
+          <div className="col-md-4 col-12">
             <img src={phonecar} width="100%" alt="Car with Phone Payment Options" />
-          </motion.div>
+          </div>
 
-          {/* Right Content - Slide from Right */}
-          <motion.div
-            className="col-md-8 col-12"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Right Content */}
+          <div className="col-md-8 col-12">
             <h6 className="c-g">DRIVEORA</h6>
             <h2 className="color fs-1">KNOW YOUR PAYMENT OPTIONS</h2>
 
             <div className="d-md-flex">
-              {/* Left List - Fade In with Delay */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
+              {/* Left List */}
+              <div>
                 <ul className="mt-4 ps-md-3 ps-0">
                   <li className="mb-4 d-flex align-items-center">
                     <FaPlus className="me-3" /> Smooth & Comfortable Driving Experience
@@ -535,16 +380,10 @@ const Home = () => {
                     <FaPlus className="me-3" /> Designed for Maximum Efficiency & Performance
                   </li>
                 </ul>
-              </motion.div>
+              </div>
 
-              {/* Right List - Fade In with Delay */}
-              <motion.div
-                className="ms-md-3 ms-0"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
+              {/* Right List */}
+              <div className="ms-md-3 ms-0">
                 <ul className="mt-4 ps-md-3 ps-0">
                   <li className="mb-4 d-flex align-items-center">
                     <FaPlus className="me-3" /> Equipped with Smart Safety Features for Peace of Mind
@@ -553,35 +392,24 @@ const Home = () => {
                     <FaPlus className="me-3" /> Premium Interiors & Innovative Technology for a Next-Level Experience
                   </li>
                 </ul>
-              </motion.div>
+              </div>
             </div>
 
-            {/* Button Animation */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              viewport={{ once: true }}
-            >
+            {/* Button */}
+            <div>
               <Button variant="" className="b-color mt-4 text-white rounded-0 border-0 ps-5 pe-5 pt-3 pb-3">
                 KNOW YOUR CAR <FaArrowRight className="ms-3" />
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </Row>
       </Container>
 
       {/* WHY BELEASING? */}
       <Container fluid className="pt-md-5 pt-3 pb-md-5 overflow-hidden">
         <Row className="align-items-center">
-          {/* Left Content - Fade In from Left */}
-          <motion.div
-            className="col-lg-7 col-12 pt-md-5 pt-4 order-lg-1 order-2"
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Left Content */}
+          <div className="col-lg-7 col-12 pt-md-5 pt-4 order-lg-1 order-2">
             <h2 className="color fs-1 pb-2">WHY DRIVEORA ?</h2>
             <p className="c-g">
               DriveOra offers the perfect combination of affordability, luxury, and convenience—
@@ -590,63 +418,34 @@ const Home = () => {
 
             <Row className="mt-md-5 mt-0 pt-md-4 pt-0">
               {/* Box 1 - Safe Rides */}
-              <motion.div
-                className="col-md-4 hov-up"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
+              <div className="col-md-4 hov-up">
                 <img className="d-md-block d-none" src={sef} width="25%" alt="Safe, Secure & Reliable Rides" />
                 <h5 className="color mt-md-5 mt-2">Your Safety, Our Priority</h5>
                 <p className="c-g">Drive worry-free with high-end security systems and 24/7 support.</p>
-              </motion.div>
+              </div>
 
               {/* Box 2 - Customer Satisfaction */}
-              <motion.div
-                className="col-md-4 hov-up"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
+              <div className="col-md-4 hov-up">
                 <img className="d-md-block d-none" src={ger} width="25%" alt="Our Commitment to You" />
                 <h5 className="color mt-md-5 mt-2">Your Satisfaction, Our Promise</h5>
                 <p className="c-g">Every ride comes with a promise of safety, comfort, and exceptional service.</p>
-              </motion.div>
+              </div>
 
               {/* Box 3 - Easy Returns */}
-              <motion.div
-                className="col-md-4 hov-up"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.6 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
+              <div className="col-md-4 hov-up">
                 <img className="d-md-block d-none" src={ret} width="25%" alt="Easy Returns & Flexible Policies" />
                 <h5 className="color mt-md-5 mt-2">Return Your Car with Ease</h5>
                 <p className="c-g">Flexible return policies designed to suit your needs—because life happens!</p>
-              </motion.div>
+              </div>
             </Row>
-          </motion.div>
+          </div>
 
-          {/* Right Image - Fade In from Right */}
-          <motion.div
-            className="col-lg-5 col-12 order-lg-2 order-1 p-0"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Right Image */}
+          <div className="col-lg-5 col-12 order-lg-2 order-1 p-0">
             <img src={img1} width="100%" alt="DriveOra Car" />
-          </motion.div>
+          </div>
         </Row>
       </Container>
-
-
 
     </div>
   )

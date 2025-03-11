@@ -22,16 +22,9 @@ const Contact = () => {
       <Container fluid className="bele-img-2">
         <Row className="m-0 justify-content-center ">
           <div className="col-4 pd fs-1 d-md-block d-none">
-            <motion.h2
-              className="text-white text-center fs-md-1 fs-6 mb-5 bg-color word p-4 ms-3"
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              // whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(255,255,255,0.5)" }}
-              viewport={{ once: true }}
-            >
+            <h2 className="text-white text-center fs-md-1 fs-6 mb-5 bg-color word p-4 ms-3">
               Need Help? We’re Just a Click Away!
-            </motion.h2>
+            </h2>
           </div>
 
           <div className='pd d-md-none d-block '>
@@ -46,168 +39,84 @@ const Contact = () => {
       <Container fluid className="overflow-hidden"> {/* ✅ Prevent Horizontal Scroll */}
         <Row className="align-items-center mx-0"> {/* ✅ Remove extra margin */}
 
-          {/* Left Box - Slide from Left */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12 p-lg-5 p-3 text-md-start text-center"
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
+          {/* Left Box */}
+          <div className="col-lg-4 col-md-6 col-12 p-lg-5 p-3 text-md-start text-center">
             <h6 className="text-uppercase">Find Your Perfect Ride</h6>
             <h3><a href="" className="color fs-2">+1 234 567 8900</a></h3>
-          </motion.div>
+          </div>
 
-          {/* Middle Box - Fade In */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12 p-lg-5 p-3 text-md-start text-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
+          {/* Middle Box */}
+          <div className="col-lg-4 col-md-6 col-12 p-lg-5 p-3 text-md-start text-center">
             <h6 className="text-uppercase">Which Car Suits You Best?</h6>
             <h3><a href="" className="color fs-2">driveorahelp@bnsteps.com</a></h3>
-          </motion.div>
+          </div>
 
-          {/* Right Box - Slide from Right */}
-          <motion.div
-            className="col-lg-4 col-12 p-lg-5 p-3 text-md-start text-center"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
+          {/* Right Box */}
+          <div className="col-lg-4 col-12 p-lg-5 p-3 text-md-start text-center">
             <ul className="d-flex mb-0 justify-content-center ps-0 ">
-              {[
-                { icon: <FaFacebookF />, className: "" },
-                { icon: <FaTwitter />, className: "ps-5" },
-                { icon: <FaYoutube />, className: "ps-5" },
-                { icon: <FaLinkedinIn />, className: "ps-5" }
-              ].map((item, index) => (
-                <motion.li
-                  key={index}
-                  className={item.className}
-                  whileHover={{ scale: 1.2 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <Link to="" className="fs-4 color">{item.icon}</Link>
-                </motion.li>
-              ))}
+              <li><Link to="" className="fs-4 color"><FaFacebookF /></Link></li>
+              <li className="ps-5"><Link to="" className="fs-4 color"><FaTwitter /></Link></li>
+              <li className="ps-5"><Link to="" className="fs-4 color"><FaYoutube /></Link></li>
+              <li className="ps-5"><Link to="" className="fs-4 color"><FaLinkedinIn /></Link></li>
             </ul>
-          </motion.div>
+          </div>
 
         </Row>
       </Container>
 
-
-
-      {/*  */}
       <Container fluid className="bg-light mt-md-5 mt-3 pt-md-5 pt-3">
         <Row>
 
-          {/* Left Box - Slide from Left */}
-          <motion.div
-            className="col-lg-6 col-12 pt-5 pb-lg-5"
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-white p-5">
-              <h3 className="fs-2 mb-3">Unit 0X, DriveOra, 789 Fictional Ave, Brisbane, QLD 4000, Australia</h3>
-              <span className="c-g">Monday - Friday: 8am - 5pm</span>
-              <img className="mt-5 text-center" src={contact} width="100%" alt="" />
-            </div>
-          </motion.div>
-
-          {/* Right Box - Slide from Right */}
-          <motion.div
-            className="col-lg-6 col-12 pt-lg-5 pb-5"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-white p-5">
-              <h3 className="fs-2 mb-3">WE’D LOVE TO HEAR <br /> FROM YOU!</h3>
-              <div className="mt-5">
-                <form>
-
-                  {/* Input Fields - Fade In Effect */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    viewport={{ once: true }}
-                    className="pb-3"
-                  >
-                    <input type="text" className="form-control" placeholder="Full Name" />
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.6 }}
-                    viewport={{ once: true }}
-                    className="mb-3"
-                  >
-                    <input type="text" className="form-control" placeholder="Phone*" />
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.7 }}
-                    viewport={{ once: true }}
-                    className="mb-3"
-                  >
-                    <input type="email" className="form-control" placeholder="E-mail" />
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.8 }}
-                    viewport={{ once: true }}
-                    className="mb-4"
-                  >
-                    <textarea className="form-control" rows="3" placeholder="Your message"></textarea>
-                  </motion.div>
-
-                  {/* Button - Scale Animation */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 1 }}
-                    viewport={{ once: true }}
-                  >
-                    <Button variant="" className="b-color text-white rounded-0 border-0 ps-5 pe-5 pt-3 pb-3 mb-2">
-                      Let’s Connect
-                    </Button>
-                  </motion.div>
-
-                </form>
+          <div className="row d-flex align-items-stretch">
+            {/* Left Box */}
+            <div className="col-lg-6 col-12 pt-5 pb-lg-5 d-flex">
+              <div className="bg-white p-5 w-100 h-100 d-flex flex-column">
+                <h3 className="fs-2 mb-3">
+                  Unit 0X, DriveOra, 789 Fictional Ave, Brisbane, QLD 4000, Australia
+                </h3>
+                <span className="c-g">Monday - Friday: 8am - 5pm</span>
+                <img className="mt-auto text-center" src={contact} width="100%" alt="" />
               </div>
             </div>
-          </motion.div>
+
+            {/* Right Box */}
+            <div className="col-lg-6 col-12 pt-lg-5 pb-5 d-flex">
+              <div className="bg-white p-5 w-100 h-100 d-flex flex-column">
+                <h3 className="fs-2 mb-3">WE’D LOVE TO HEAR <br /> FROM YOU!</h3>
+                <div className="mt-auto">
+                  <form>
+                    <div className="pb-3">
+                      <input type="text" className="form-control" placeholder="Full Name" />
+                    </div>
+                    <div className="mb-3">
+                      <input type="text" className="form-control" placeholder="Phone*" />
+                    </div>
+                    <div className="mb-3">
+                      <input type="email" className="form-control" placeholder="E-mail" />
+                    </div>
+                    <div className="mb-4">
+                      <textarea className="form-control" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <div>
+                      <Button variant="" className="b-color text-white rounded-0 border-0 ps-5 pe-5 pt-3 pb-3 mb-2">
+                        Let’s Connect
+                      </Button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </Row>
       </Container>
-
 
 
       {/* RENTING IS PURE CONVENIENCE */}
       <Container fluid className="pb-5 bg-light" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
-          {/* Left Side Text - Animate from Left */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12 text-center"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Left Side Text */}
+          <div className="col-lg-4 col-md-6 col-12 text-center">
             <h2 className="fs-1">
               SMART RENTING, <br className="d-md-block d-none" />
               SMOOTH DRIVING
@@ -222,30 +131,17 @@ const Contact = () => {
             >
               CHECK YOUR CAR <FaArrowRight className="ms-3" />
             </Button>
-          </motion.div>
+          </div>
 
-          {/* Middle Car Image - Animate from Bottom */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12"
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Middle Car Image */}
+          <div className="col-lg-4 col-md-6 col-12">
             <img src={audimiddel} width="100%" alt="Luxury Audi Car with Advanced Technology & Performance" />
-          </motion.div>
+          </div>
 
-          {/* Right Side List - Animate from Right */}
-          <motion.div
-            className="col-lg-4 col-12"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Right Side List */}
+          <div className="col-lg-4 col-12">
             <ul className="p-0">
-              {[
-                "Hassle-Free Maintenance & Full Service Coverage",
+              {["Hassle-Free Maintenance & Full Service Coverage",
                 "Easily Swap Your Car for the Latest Model",
                 "No Hidden Fees – Transparent & Predictable Costs",
               ].map((item, index) => (
@@ -254,7 +150,7 @@ const Contact = () => {
                 </div>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </Row>
       </Container>
 

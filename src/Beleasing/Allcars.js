@@ -9,11 +9,11 @@ import fordenimnibhlitora from '../Beleasing Img/fordenimnibhlitora.jpeg'
 import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.jpeg'
 import MERCEDESCob from '../Beleasing Img/marsci.jpeg'
 import bmwcommodoipsum2 from '../Beleasing Img/BMW X4 M Competition 2022.jpeg'
-import MercedesMATTIS  from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
-import AudiGT  from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
-import AudMERCEDESETIAM  from '../Beleasing Img/2024 Mercedes-AMG GT Coupe.jpeg'
-import BMWM4  from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
-import allcar  from '../Beleasing Img/all car.webp'
+import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
+import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
+import AudMERCEDESETIAM from '../Beleasing Img/2024 Mercedes-AMG GT Coupe.jpeg'
+import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
+import allcar from '../Beleasing Img/all car.webp'
 
 
 //icon
@@ -44,7 +44,7 @@ const cars = [
     img: lamborghinirutrumlibero,
   },
   {
-    name: "MERCEDES CONUBIA BLANDIT SEM NEQUE",
+    name: "MERCEDES CONUBIA BLANDIT NEQUE",
     price: "$15,000.00",
     link: "/mercedes-conubia-blandit-sem-neque",
     img: MERCEDESCob,
@@ -89,88 +89,58 @@ const Allcars = () => {
       <Container fluid className="overflow-hidden mt-5 pt-3">
         <Row className="align-items-center">
 
-          {/* Left Content - Fade In from Left */}
-          <motion.div
-            className="col-md-7 col-12"
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
+          {/* Left Content */}
+          <div className="col-md-7 col-12">
             <h2 className="fs-1 text-uppercase">Explore Our Full Range of Cars</h2>
             <p className="c-g">Discover a wide selection of cars designed for every lifestyle. Whether you seek efficiency, luxury, or power, our collection offers top-tier performance, advanced features, and ultimate driving comfort.</p>
-          </motion.div>
+          </div>
 
-          {/* Right Image - Slide In from Right */}
-          <motion.div
-            className="col-md-5"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            viewport={{ once: true }}
-          >
+          {/* Right Image */}
+          <div className="col-md-5">
             <img
               className="mt-4"
               src={allcar}
               width="100%"
               alt=""
             />
-          </motion.div>
+          </div>
 
         </Row>
       </Container>
 
-
-
       {/* CHOOSE FROM 1,200 NEW CARS */}
       <Container fluid className="pt-md-3 pt-3 mt-md-5 mt-3 bg-light pb-5 overflow-hidden">
-      <Row className="mt-5 g-lg-4 g-2">
-        {cars.map((car, index) => (
-          <motion.div
-            key={index}
-            className="col-lg-4 col-md-6 col-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-white pb-4 position-relative hov-link">
-              <Link to={car.link}>
-                <img src={car.img} width="100%" alt={car.name} />
-              </Link>
-              <Link to={car.link} className="link-pos bg-white p-2 rounded-circle">
-                <FaLink className="text-dark" />
-              </Link>
-              <div className="pt-4 ms-4 me-4">
-                <h5>{car.name}</h5>
-                <p className="c-g">{car.price}</p>
-                <div className="d-flex border-top pt-3 align-items-center justify-content-between">
-                  <p className="mb-0">Check details</p>
-                  <Link to={car.link}>
-                    <FaArrowRight className="text-dark" />
-                  </Link>
+        <Row className="mt-5 g-lg-4 g-2">
+          {cars.map((car, index) => (
+            <div key={index} className="col-lg-4 col-md-6 col-12">
+              <div className="bg-white pb-4 position-relative hov-link">
+                <Link to={car.link}>
+                  <img src={car.img} width="100%" alt={car.name} />
+                </Link>
+                <Link to={car.link} className="link-pos bg-white p-2 rounded-circle">
+                  <FaLink className="text-dark" />
+                </Link>
+                <div className="pt-4 ms-4 me-4">
+                  <h5>{car.name}</h5>
+                  <p className="c-g">{car.price}</p>
+                  <div className="d-flex border-top pt-3 align-items-center justify-content-between">
+                    <p className="mb-0">Check details</p>
+                    <Link to={car.link}>
+                      <FaArrowRight className="text-dark" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </motion.div>
-        ))}
-      </Row>
-    </Container>
-
-
-
+          ))}
+        </Row>
+      </Container>
 
       {/* RENTING IS PURE CONVENIENCE */}
       <Container fluid className="pb-5 bg-light" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
-          {/* Left Side Text - Animate from Left */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12 text-center"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Left Side Text */}
+          <div className="col-lg-4 col-md-6 col-12 text-center">
             <h2 className="fs-1">
               SMART RENTING, <br className="d-md-block d-none" />
               SMOOTH DRIVING
@@ -185,27 +155,15 @@ const Allcars = () => {
             >
               CHECK YOUR CAR <FaArrowRight className="ms-3" />
             </Button>
-          </motion.div>
+          </div>
 
-          {/* Middle Car Image - Animate from Bottom */}
-          <motion.div
-            className="col-lg-4 col-md-6 col-12"
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Middle Car Image */}
+          <div className="col-lg-4 col-md-6 col-12">
             <img src={audimiddel} width="100%" alt="Luxury Audi Car with Advanced Technology & Performance" />
-          </motion.div>
+          </div>
 
-          {/* Right Side List - Animate from Right */}
-          <motion.div
-            className="col-lg-4 col-12"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          {/* Right Side List */}
+          <div className="col-lg-4 col-12">
             <ul className="p-0">
               {[
                 "Hassle-Free Maintenance & Full Service Coverage",
@@ -217,9 +175,10 @@ const Allcars = () => {
                 </div>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </Row>
       </Container>
+
 
 
     </div>

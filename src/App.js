@@ -28,6 +28,7 @@ import Audi from "./Beleasing/Cars/Audi";
 import Metiam from "./Beleasing/Cars/Metiam";
 import Bmwcubilia from "./Beleasing/Cars/Bmwcubilia";
 import Mattis from "./Beleasing/Cars/Mattis";
+import TermaCondtion from "./Beleasing/TermaCondtion";
 
 
 function App() {
@@ -74,6 +75,10 @@ function App() {
 
           <Route path="/suv">
             <Header /> <Suv /> <Footer />
+          </Route>
+
+          <Route path="/terms-and-conditions">
+            <Header /> <TermaCondtion /> <Footer />
           </Route>
 
 
