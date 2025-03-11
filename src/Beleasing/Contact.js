@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 //iconn
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { Link } from 'react-router-dom/cjs/react-router-dom'
 import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
 import contact from '../Beleasing Img/contact.jpeg'

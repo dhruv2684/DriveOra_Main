@@ -5,9 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import Button from 'react-bootstrap/Button';
 
-import { motion } from "framer-motion";
-
-
 // img
 import sedan from '../Beleasing Img/sedan car.webp'
 import hatchback from '../Beleasing Img/hatchback car.webp'
@@ -33,18 +30,12 @@ import sef from '../Beleasing Img/sefty.svg'
 import ger from '../Beleasing Img/gerunty.svg'
 import ret from '../Beleasing Img/return.svg'
 
-
-
-
-
 //icon
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
 
-// import { AiOutlineSafetyCertificate } from "react-icons/ai";
-// import { GrRefresh } from "react-icons/gr";
+
 
 
 const Home = () => {

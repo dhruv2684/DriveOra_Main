@@ -1,14 +1,11 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 //icon
 import { FaCheckCircle } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
 import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
 import aboutcar1 from '../Beleasing Img/about car.jpeg'
 import aboutcarkey from '../Beleasing Img/abouu car key.jpeg'
 import aboutcarinter from '../Beleasing Img/car inside.jpeg'
-import { motion } from "framer-motion";
 import sef from '../Beleasing Img/sefty.svg'
 import ger from '../Beleasing Img/gerunty.svg'
 import ret from '../Beleasing Img/return.svg'

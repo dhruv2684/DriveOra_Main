@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-import { motion } from "framer-motion";
 import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
 
 import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg'

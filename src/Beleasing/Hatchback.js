@@ -6,7 +6,6 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom/cjs/react-router-dom';
 
-import { motion } from "framer-motion";
 import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
 import { FaLink } from "react-icons/fa";
 import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg'

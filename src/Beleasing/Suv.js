@@ -6,18 +6,12 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom/cjs/react-router-dom';
 
-import { motion } from "framer-motion";
 import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
 import { FaLink } from "react-icons/fa";
 import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg'
 import fordenimnibhlitora from '../Beleasing Img/fordenimnibhlitora.jpeg'
-import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.jpeg'
 import MERCEDESCob from '../Beleasing Img/marsci.jpeg'
-import bmwcommodoipsum2 from '../Beleasing Img/BMW X4 M Competition 2022.jpeg'
-import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
-import AudMERCEDESETIAM from '../Beleasing Img/2024 Mercedes-AMG GT Coupe.jpeg'
-import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
 import suvcar from '../Beleasing Img/suv car.webp'
 
 
