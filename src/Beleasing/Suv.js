@@ -13,6 +13,7 @@ import fordenimnibhlitora from '../Beleasing Img/fordenimnibhlitora.jpeg'
 import MERCEDESCob from '../Beleasing Img/marsci.jpeg'
 import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
 import suvcar from '../Beleasing Img/suv car.webp'
+import { Helmet } from 'react-helmet';
 
 
 const cars = [
@@ -51,6 +52,23 @@ const cars = [
 const Suv = () => {
   return (
     <div>
+
+
+      <Helmet>
+        <title>Powerful & Spacious SUVs | Best Off-Road & Family SUVs | driveOra</title>
+        <meta
+          name="description"
+          content="Explore high-performance SUVs with spacious interiors, cutting-edge safety features, and off-road capability. Find your perfect SUV at driveOra today!"
+        />
+        <meta
+          name="keywords"
+          content="SUV Cars, Best SUVs, Family SUVs, Off-Road SUVs, Luxury SUVs, Fuel-Efficient SUVs, driveOra SUVs"
+        />
+        <link rel="canonical" href="https://www.driveora.com/suvs" />
+      </Helmet>
+
+
+
       {/*  */}
       <Container fluid className="overflow-hidden mt-5">
         <Row className="align-items-center">

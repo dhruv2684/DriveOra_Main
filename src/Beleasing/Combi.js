@@ -14,6 +14,7 @@ import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
 import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
 import comcar from '../Beleasing Img/combi car.webp'
+import { Helmet } from 'react-helmet';
 
 
 const cars = [
@@ -46,6 +47,21 @@ const cars = [
 const Combi = () => {
   return (
     <div>
+
+      <Helmet>
+        <title>Spacious & Versatile Combi Cars | Family & Cargo Vehicles | driveOra</title>
+        <meta
+          name="description"
+          content="Explore the best Combi cars, offering spacious interiors, fuel efficiency, and versatility for both families and businesses. Find your perfect ride at driveOra."
+        />
+        <meta
+          name="keywords"
+          content="Combi Cars, Spacious Vehicles, Family Cars, Cargo Vans, Versatile Cars, driveOra Combi"
+        />
+        <link rel="canonical" href="https://www.driveora.com/combi-cars" />
+      </Helmet>
+
+
 
       <Container fluid className="overflow-hidden mt-5">
         <Row className="align-items-center">

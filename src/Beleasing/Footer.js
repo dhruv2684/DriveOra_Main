@@ -1,12 +1,8 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom/cjs/react-router-dom'
-//icon
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { FaInstagram } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -22,11 +18,9 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="col-md-6 col-12 d-flex justify-content-center mt-md-0 mt-3">
-            <ul className="d-flex mb-0 me-3">
-              <li><Link to="" className="text-white"><FaFacebookF /></Link></li>
-              <li><Link to="" className="text-white ps-4"><FaTwitter /></Link></li>
-              <li><Link to="" className="text-white ps-4"><FaYoutube /></Link></li>
-              <li><Link to="" className="text-white ps-4"><FaLinkedinIn /></Link></li>
+            <ul className="d-flex mb-0 me-3 align-items-center">
+              <li className='fs-4'><Link to="https://www.instagram.com/the.filmora?igsh=dWdqYnpldjZnZHBq" className="text-white"><FaInstagram /></Link></li>
+              <li className='text-white ms-2 fs-6 mt-2'>Follow On Instagram</li>
             </ul>
           </div>
         </Row>
@@ -35,7 +29,7 @@ const Footer = () => {
         <Row className="pt-md-5 pt-3 text-center">
           {[{
             title: "About",
-            links: ["About", "Contact us", "Accessibility", "Carreers", "Request brochure"]
+            links: ["Contact us", "Accessibility", "Carreers", "Request brochure"]
           }, {
             title: "Leasing & Finance",
             links: ["Apply for credit", "Reward & Finance programs", "End of lease options"],
@@ -54,7 +48,7 @@ const Footer = () => {
               <p className="mb-2 text-white">{section.title}</p>
               <ul className="mb-0 ps-0">
                 {section.links.map((link, i) => (
-                  <li key={i} className="mb-2"><Link to="" className="text-white">{link}</Link></li>
+                  <li key={i} className="mb-2"><Link to="/" className="text-white">{link}</Link></li>
                 ))}
               </ul>
 
@@ -63,7 +57,7 @@ const Footer = () => {
                   <p className="mb-2 text-white">{section.subTitle}</p>
                   <ul className="ps-0 mb-0">
                     {section.subLinks.map((subLink, i) => (
-                      <li key={i} className="mb-2"><Link to="" className="text-white">{subLink}</Link></li>
+                      <li key={i} className="mb-2"><Link to="/" className="text-white">{subLink}</Link></li>
                     ))}
                   </ul>
                 </>

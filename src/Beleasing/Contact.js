@@ -7,23 +7,41 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { Link } from 'react-router-dom/cjs/react-router-dom'
 import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
 import contact from '../Beleasing Img/contact.jpeg'
-//icon
+import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Helmet } from 'react-helmet';
 
 
 const Contact = () => {
   return (
     <div>
+
+      <Helmet>
+        <title>Get Expert Car Leasing Support | 24/7 Assistance Available</title>
+        <meta
+          name="description"
+          content="Need help with car leasing or sales? Our experts are just a click away! Get 24/7 assistance for the best luxury car deals & services."
+        />
+        <meta
+          name="keywords"
+          content="Car Leasing Support, 24/7 Car Assistance, Best Car Deals, Luxury Car Help, Car Sales Experts"
+        />
+
+        <link rel="canonical" href="https://yourwebsite.com/support" />
+      </Helmet>
+
+
+
       {/*  */}
       <Container fluid className="bele-img-2">
         <Row className="m-0 justify-content-center ">
           <div className="col-4 pd fs-1 d-md-block d-none">
-            <h2 className="text-white text-center fs-md-1 fs-6 mb-5 bg-color word p-4 ms-3">
+            <h1 className="text-white text-center mb-5 bg-color word p-4 ms-3">
               Need Help? We’re Just a Click Away!
-            </h2>
+            </h1>
           </div>
 
           <div className='pd d-md-none d-block '>
@@ -52,11 +70,9 @@ const Contact = () => {
 
           {/* Right Box */}
           <div className="col-lg-4 col-12 p-lg-5 p-3 text-md-start text-center">
-            <ul className="d-flex mb-0 justify-content-center ps-0 ">
-              <li><Link to="" className="fs-4 color"><FaFacebookF /></Link></li>
-              <li className="ps-5"><Link to="" className="fs-4 color"><FaTwitter /></Link></li>
-              <li className="ps-5"><Link to="" className="fs-4 color"><FaYoutube /></Link></li>
-              <li className="ps-5"><Link to="" className="fs-4 color"><FaLinkedinIn /></Link></li>
+            <ul className="d-flex mb-0 justify-content-center ps-0 align-items-center">
+              <li className="ps-5"><Link to="https://www.instagram.com/the.filmora?igsh=dWdqYnpldjZnZHBq" className="fs-4 color"><FaInstagram /></Link></li>
+              <li className="mt-2 ms-2">Follow On Instagram</li>
             </ul>
           </div>
 

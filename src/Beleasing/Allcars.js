@@ -20,6 +20,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -84,6 +85,22 @@ const cars = [
 const Allcars = () => {
   return (
     <div>
+
+      <Helmet>
+        <title>Explore Our Full Range of Cars | Luxury & Performance Vehicles</title>
+        <meta
+          name="description"
+          content="Browse our wide selection of luxury, sports, and performance cars. Experience the best in efficiency, power, and comfort with driveOra."
+        />
+        <meta
+          name="keywords"
+          content="Luxury Cars, Sports Cars, Performance Vehicles, Car Collection, Best Car Deals, driveOra Cars"
+        />
+
+        <link rel="canonical" href="https://yourwebsite.com/cars" />
+      </Helmet>
+
+
       {/*  */}
       <Container fluid className="overflow-hidden mt-5 pt-3">
         <Row className="align-items-center">

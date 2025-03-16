@@ -13,6 +13,7 @@ import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.
 import MERCEDESCob from '../Beleasing Img/marsci.jpeg'
 import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import hhatchback from '../Beleasing Img/hatchback car.webp'
+import { Helmet } from 'react-helmet';
 
 const cars = [
   {
@@ -49,6 +50,22 @@ const cars = [
 const Hatchback = () => {
   return (
     <div>
+
+      <Helmet>
+        <title>Compact & Efficient Hatchbacks | Best Small Cars | driveOra</title>
+        <meta
+          name="description"
+          content="Explore the best hatchback cars with advanced features, fuel efficiency, and compact design. Find your perfect city ride with driveOra."
+        />
+        <meta
+          name="keywords"
+          content="Hatchback Cars, Compact Cars, Fuel Efficient Cars, Best City Cars, driveOra Hatchbacks"
+        />
+
+        <link rel="canonical" href="https://yourwebsite.com/hatchbacks" />
+      </Helmet>
+
+
 
       <Container fluid className="overflow-hidden mt-5">
         <Row className="align-items-center">

@@ -10,6 +10,7 @@ import sef from '../Beleasing Img/sefty.svg'
 import ger from '../Beleasing Img/gerunty.svg'
 import ret from '../Beleasing Img/return.svg'
 import img1 from '../Beleasing Img/buy to driveora.jpeg'
+import { Helmet } from 'react-helmet';
 
 
 
@@ -17,13 +18,29 @@ const About = () => {
   return (
     <div>
 
+      <Helmet>
+        <title>About Us - Trusted Car Leasing Experts | 15+ Years of Excellence</title>
+        <meta
+          name="description"
+          content="Learn about our 15+ years of expertise in luxury car leasing & sales. Trusted by thousands, we offer the best deals on top car brands!"
+        />
+        <meta
+          name="keywords"
+          content="Trusted Car Leasing Experts, Luxury Car Leasing, Best Car Leasing Deals, Car Rental Experts, Affordable Car Sales"
+        />
+
+        <link rel="canonical" href="https://yourwebsite.com/about" />
+      </Helmet>
+
+
+
       {/* main img */}
       <Container fluid className="bele-img-1 overflow-hidden"> {/* ✅ Prevent Horizontal Scroll */}
         <Row className="m-0">
           <div className="col-6 pd d-md-block d-none">
-            <h2 className="text-white fs-1 mb-5 bg-color word p-4 ms-3 text-uppercase">
+            <h1 className="text-white mb-5 bg-color word p-4 ms-3 text-uppercase">
               Trusted Car Leasing Experts for Over 15 Years
-            </h2>
+            </h1>
           </div>
 
           <div className='pd d-md-none d-block '>

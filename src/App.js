@@ -1,6 +1,3 @@
-// // ..................................  .................................................//
-
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -42,17 +39,14 @@ function App() {
       <Router>
         <Switch>
 
-          {/* Done */}
           <Route exact path="/">
             <Header /> <Home /> <Footer />
           </Route>
 
-          {/* Done */}
           <Route path="/about" >
             <Header /> <About /> <Footer />
           </Route>
 
-          {/* Done */}
           <Route path="/contact" >
             <Header /> <Contact /> <Footer />
           </Route>
@@ -82,11 +76,7 @@ function App() {
           </Route>
 
 
-
-
-
-
-
+          {/* Aiya thi */}
           <Route path="/bmw-commodo-ipsum">
             <Header /> <Bmw /> <Footer />
           </Route>
@@ -122,7 +112,6 @@ function App() {
           <Route path="/bmw-cubilia" >
             <Header /><Bmwcubilia /><Footer />
           </Route>
-
 
         </Switch>
       </Router>

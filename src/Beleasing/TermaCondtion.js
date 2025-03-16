@@ -1,9 +1,27 @@
 import React from 'react'
 import { Card, Container } from 'react-bootstrap'
+import { Helmet } from 'react-helmet'
 
 const TermaCondtion = () => {
     return (
         <div>
+
+            <Helmet>
+                <title>Terms and Conditions | driveOra - Luxury Car Leasing & Sales</title>
+                <meta
+                    name="description"
+                    content="Read the Terms and Conditions of driveOra. Understand our policies on car leasing, website usage, privacy, and more."
+                />
+                <meta
+                    name="keywords"
+                    content="driveOra Terms and Conditions, Car Leasing Policies, Luxury Car Sales Rules, Website Usage Terms"
+                />
+
+                <link rel="canonical" href="https://yourwebsite.com/terms-and-conditions" />
+            </Helmet>
+
+
+
             <Container className="my-md-5 my-3 pt-md-5 pt-3 ">
                 <div className="row">
                     <div className="col-lg-8 col-12">

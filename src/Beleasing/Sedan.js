@@ -17,6 +17,7 @@ import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.
 import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
 import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
 import sedan from '../Beleasing Img/sedan car.webp'
+import { Helmet } from 'react-helmet';
 
 const cars = [
   {
@@ -58,6 +59,21 @@ const cars = [
 const Sedan = () => {
   return (
     <div>
+
+      <Helmet>
+        <title>Luxury Sedans | Comfort & Performance | driveOra</title>
+        <meta
+          name="description"
+          content="Discover the best luxury sedans at driveOra. Experience premium comfort, advanced technology, and superior performance in every drive."
+        />
+        <meta
+          name="keywords"
+          content="Luxury Sedan, Premium Cars, Comfortable Rides, Sedan Performance, driveOra Sedans"
+        />
+
+        <link rel="canonical" href="https://yourwebsite.com/sedans" />
+      </Helmet>
+
 
       <Container fluid className="overflow-hidden mt-5">
         <Row className="align-items-center">

@@ -4,8 +4,6 @@ import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import Button from 'react-bootstrap/Button';
-
-// img
 import sedan from '../Beleasing Img/sedan car.webp'
 import hatchback from '../Beleasing Img/hatchback car.webp'
 import combi from '../Beleasing Img/combi car.webp'
@@ -18,24 +16,19 @@ import audi from '../DriveOra Image/2.1 car.jpg'
 import incar from '../DriveOra Image/2.2 car.jpg'
 import phonecar from '../Beleasing Img/car with phone.png'
 import img1 from '../Beleasing Img/buy to driveora.jpeg'
-
 import S_logo from '../Beleasing Img/citroen symbol.svg'
 import S_logo2 from '../Beleasing Img/audi symbol.svg'
 import S_logo3 from '../Beleasing Img/lexus symbol.svg'
 import S_logo4 from '../Beleasing Img/ford symbol.svg'
 import S_logo5 from '../Beleasing Img/hyindai symbol.svg'
 import S_logo6 from '../Beleasing Img/bmw symbol.svg'
-
 import sef from '../Beleasing Img/sefty.svg'
 import ger from '../Beleasing Img/gerunty.svg'
 import ret from '../Beleasing Img/return.svg'
-
-//icon
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
-
-
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
@@ -44,15 +37,77 @@ const Home = () => {
 
   return (
     <div>
+
+      <Helmet>
+        {/* Page Title */}
+        <title>DriveOra Luxury Cars for Lease & Sale | Best Car Deals & Offers 2025</title>
+
+        {/* Meta Description & Keywords */}
+        <meta
+          name="description"
+          content="Get the best luxury car leasing & sales deals in 2025. Affordable prices, top brands & exclusive offers – Drive your dream car today!"
+        />
+        <meta
+          name="keywords"
+          content="Luxury Cars for Lease, Best Car Deals 2025, Buy Luxury Cars, Affordable Car Leasing, Top Car Brands for Sale"
+        />
+        <meta name="author" content="DriveOra" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Canonical Tag */}
+        <link rel="canonical" href="https://www.driveora.com" />
+
+        {/* Open Graph (For Facebook & Social Media) */}
+        <meta property="og:title" content="Luxury Cars for Lease & Sale | Best Deals 2025" />
+        <meta
+          property="og:description"
+          content="Drive your dream luxury car! Explore the best leasing & sale offers on premium cars in 2025."
+        />
+        <meta property="og:image" content="https://www.driveora.com/images/luxury-car.jpg" />
+        <meta property="og:url" content="https://www.driveora.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card (For Twitter SEO) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Luxury Cars for Lease & Sale | Best Deals 2025" />
+        <meta
+          name="twitter:description"
+          content="Find top luxury car leasing & sales deals. Affordable prices & exclusive offers!"
+        />
+        <meta name="twitter:image" content="https://www.driveora.com/images/luxury-car.jpg" />
+
+        {/* Schema Markup (For Google Rich Snippets) */}
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Car",
+      "name": "Luxury Cars for Lease & Sale",
+      "description": "Find top luxury cars for lease and sale. Get the best deals & offers in 2025.",
+      "brand": {
+        "@type": "Brand",
+        "name": "DriveOra"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "image": "https://www.driveora.com/images/luxury-car.jpg",
+      "url": "https://www.driveora.com"
+    }
+    `}
+        </script>
+      </Helmet>
+
+
       {/* IMG */}
       <Container fluid className='bele-img mt-1'>
         <Row className='m-0'>
-          {/* Left Side Content */}
           <div className="col-8 pd">
             <h2 className="text-white d-md-block d-none fs-md-1 mb-md-5 mb-2">
               DRIVE YOUR DREAM CAR <br /> WITH OUR LEASING PLANS
             </h2>
-            {/* Mobile */}
             <h4 className="text-white d-md-none d-block fs-md-1 mb-md-5 mb-2">
               DRIVE YOUR DREAM CAR  WITH OUR LEASING PLANS
             </h4>
@@ -151,14 +206,12 @@ const Home = () => {
         </Row>
       </Container>
 
-
       {/* CHOOSE FROM 1,200 NEW CARS */}
       <Container fluid className="pt-5 mt-5 bg-light pb-5" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
           {/* Left Side Text */}
           <div className="">
-            <h1 className="d-md-block d-none text-center">1,200+ CARS WAITING FOR YOU!</h1>
-            <h1 className="fs-6 d-md-none d-block text-center">1,200+ CARS WAITING FOR YOU!</h1>
+            <h1 className=" text-center">1,200+ Cars for Sale | Best Car Deals Online</h1>
           </div>
         </Row>
 
@@ -198,7 +251,6 @@ const Home = () => {
           ))}
         </Row>
       </Container>
-
 
       {/* RENTING IS PURE CONVENIENCE */}
       <Container fluid className="pb-5 bg-light" style={{ overflowX: "hidden" }}>
@@ -243,8 +295,6 @@ const Home = () => {
         </Row>
       </Container>
 
-
-
       {/* 2 img car */}
       <Container fluid className="mb-md-5 mb-4 pb-md-5" style={{ overflowX: "hidden" }}>
         <Row>
@@ -278,7 +328,6 @@ const Home = () => {
         </Row>
       </Container>
 
-
       {/* 6 car logo */}
       <Container fluid className="pb-md-5 pb-3 mb-md-5 mb-3">
         <Container>
@@ -294,7 +343,6 @@ const Home = () => {
           </Row>
         </Container>
       </Container>
-
 
       {/*Video */}
       <Container fluid className="p-0 position-relative">
@@ -345,7 +393,6 @@ const Home = () => {
           </Row>
         </Container>
       </Container>
-
 
       {/* HOW MUCH WILL YOU PAY? */}
       <Container fluid className="bg-light pt-5 pb-5 mt-5 overflow-hidden">
