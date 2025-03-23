@@ -9,7 +9,7 @@ const links = [
   { url: "/all-cars", changefreq: "daily", priority: 0.9 },
 ];
 
-const stream = new SitemapStream({ hostname: "https://yourwebsite.com" });
+const stream = new SitemapStream({ hostname: "https://drive-ora-main.vercel.app" });
 
 streamToPromise(require("stream").Readable.from(links).pipe(stream)).then(
   (data) => {

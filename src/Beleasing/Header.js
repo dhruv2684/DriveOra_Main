@@ -5,7 +5,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from "react-router-dom";
+
 //icon
 
 const Header = () => {

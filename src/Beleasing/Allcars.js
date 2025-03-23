@@ -19,7 +19,7 @@ import allcar from '../Beleasing Img/all car.webp'
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 
@@ -87,7 +87,8 @@ const Allcars = () => {
     <div>
 
       <Helmet>
-        <title>Explore Our Full Range of Cars | Luxury & Performance Vehicles</title>
+        <title>Explore Luxury & Performance Cars | Best Deals & Latest Models</title>
+
         <meta
           name="description"
           content="Browse our wide selection of luxury, sports, and performance cars. Experience the best in efficiency, power, and comfort with driveOra."

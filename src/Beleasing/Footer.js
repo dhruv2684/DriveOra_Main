@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom/cjs/react-router-dom'
+import { Link } from "react-router-dom";
+
 import { FaInstagram } from "react-icons/fa";
 
 

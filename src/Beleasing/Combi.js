@@ -1,21 +1,18 @@
-
-import React from 'react'
+import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-//icon
-import { FaArrowCircleRight } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-import { Link } from 'react-router-dom/cjs/react-router-dom';
 
-
-import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
-import { FaLink } from "react-icons/fa";
-import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg'
-import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
-import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg'
-import comcar from '../Beleasing Img/combi car.webp'
+// Icons
+import { FaArrowCircleRight, FaArrowRight, FaLink } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
+// Images
+import audimiddel from '../Beleasing Img/audipng-removebg-preview.png';
+import MercedesMATTIS from '../Beleasing Img/MERCEDES MATTIS ARCU MAXIMUS.jpeg';
+import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg';
+import BMWM4 from '../Beleasing Img/BMW 543HP 2025 M4 .jpeg';
+import comcar from '../Beleasing Img/combi car.webp';
 
 const cars = [
   {
@@ -24,7 +21,6 @@ const cars = [
     link: "/audi-litora-nec-amet",
     img: AudiGT,
   },
-
   {
     name: "BMW CUBILIA CLASS",
     price: "$2,115.00",
@@ -37,35 +33,26 @@ const cars = [
     link: "/mercedes-mattis-arcu-maximus",
     img: MercedesMATTIS,
   },
-
-
-
 ];
-
-
 
 const Combi = () => {
   return (
     <div>
-
       <Helmet>
-        <title>Spacious & Versatile Combi Cars | Family & Cargo Vehicles | driveOra</title>
+        <title>Spacious & Versatile Combi Cars | Family & Cargo Vehicles - DriveOra</title>
         <meta
           name="description"
-          content="Explore the best Combi cars, offering spacious interiors, fuel efficiency, and versatility for both families and businesses. Find your perfect ride at driveOra."
+          content="Explore the best Combi cars, offering spacious interiors, fuel efficiency, and versatility for both families and businesses. Find your perfect ride at DriveOra."
         />
         <meta
           name="keywords"
-          content="Combi Cars, Spacious Vehicles, Family Cars, Cargo Vans, Versatile Cars, driveOra Combi"
+          content="Combi Cars, Spacious Vehicles, Family Cars, Cargo Vans, Versatile Cars, DriveOra Combi"
         />
         <link rel="canonical" href="https://www.driveora.com/combi-cars" />
       </Helmet>
 
-
-
       <Container fluid className="overflow-hidden mt-5">
         <Row className="align-items-center">
-
           {/* Text Section */}
           <div className="col-md-7 col-12 order-md-1 order-2">
             <h2 className="fs-1">COMBI</h2>
@@ -76,17 +63,10 @@ const Combi = () => {
 
           {/* Image Section */}
           <div className="col-md-5 col-12 order-md-2 order-1">
-            <img
-              className="mt-4"
-              src={comcar}
-              width="100%"
-              alt="Combi"
-            />
+            <img className="mt-4" src={comcar} width="100%" alt="Combi Car" />
           </div>
-
         </Row>
       </Container>
-
 
       {/* CHOOSE FROM 1,200 NEW CARS */}
       <Container fluid className="pt-md-3 pt-3 mt-md-5 mt-3 bg-light pb-5 overflow-hidden">
@@ -116,7 +96,6 @@ const Combi = () => {
         </Row>
       </Container>
 
-
       {/* RENTING IS PURE CONVENIENCE */}
       <Container fluid className="pb-5 bg-light" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
@@ -131,8 +110,8 @@ const Combi = () => {
             </p>
             <Button
               href="/all-cars"
-              variant=""
-              className="b-color text-white rounded-0 border-0 ps-5 pe-5 pt-3 pb-3"
+              variant="primary"
+              className="text-white rounded-0 border-0 ps-5 pe-5 pt-3 pb-3"
             >
               CHECK YOUR CAR <FaArrowRight className="ms-3" />
             </Button>
@@ -140,7 +119,7 @@ const Combi = () => {
 
           {/* Middle Car Image */}
           <div className="col-lg-4 col-md-6 col-12">
-            <img src={audimiddel} width="100%" alt="Luxury Audi Car with Advanced Technology & Performance" />
+            <img src={audimiddel} width="100%" alt="Luxury Audi Car" />
           </div>
 
           {/* Right Side List */}
@@ -159,10 +138,8 @@ const Combi = () => {
           </div>
         </Row>
       </Container>
-
-
     </div>
-  )
-}
+  );
+};
 
 export default Combi;

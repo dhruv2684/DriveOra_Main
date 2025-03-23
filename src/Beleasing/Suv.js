@@ -1,20 +1,17 @@
-import React from 'react'
+import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-//icon
-import { FaArrowCircleRight } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-import { Link } from 'react-router-dom/cjs/react-router-dom';
-
-import audimiddel from '../Beleasing Img/audipng-removebg-preview.png'
-import { FaLink } from "react-icons/fa";
-import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg'
-import fordenimnibhlitora from '../Beleasing Img/fordenimnibhlitora.jpeg'
-import MERCEDESCob from '../Beleasing Img/marsci.jpeg'
-import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg'
-import suvcar from '../Beleasing Img/suv car.webp'
+import { FaArrowCircleRight, FaArrowRight, FaLink } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
+// Images
+import audimiddel from '../Beleasing Img/audipng-removebg-preview.png';
+import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg';
+import fordenimnibhlitora from '../Beleasing Img/fordenimnibhlitora.jpeg';
+import MERCEDESCob from '../Beleasing Img/marsci.jpeg';
+import AudiGT from '../Beleasing Img/2023 Audi R8 GT Coupe.jpeg';
+import suvcar from '../Beleasing Img/suv car.webp';
 
 const cars = [
   {
@@ -23,8 +20,6 @@ const cars = [
     link: "/ford-enim-nibh-litora",
     img: fordenimnibhlitora,
   },
-
-
   {
     name: "BMW COMMODO IPSUM",
     price: "$1,990.00",
@@ -43,17 +38,11 @@ const cars = [
     link: "/audi-litora-nec-amet",
     img: AudiGT,
   },
-
-
 ];
-
-
 
 const Suv = () => {
   return (
     <div>
-
-
       <Helmet>
         <title>Powerful & Spacious SUVs | Best Off-Road & Family SUVs | driveOra</title>
         <meta
@@ -67,37 +56,18 @@ const Suv = () => {
         <link rel="canonical" href="https://www.driveora.com/suvs" />
       </Helmet>
 
-
-
-      {/*  */}
       <Container fluid className="overflow-hidden mt-5">
         <Row className="align-items-center">
-
-          {/* Text Section */}
           <div className="col-md-7 col-12 order-md-1 order-2">
             <h2 className="fs-1">SUV</h2>
-            <p className="c-g">
-              Magna tortor dui integer volutpat sed eu vel. A neque mauris cursus a fusce aliquam sagittis.
-              <br />
-              Pulvinar eros.
-            </p>
+            <p className="c-g">Magna tortor dui integer volutpat sed eu vel. A neque mauris cursus a fusce aliquam sagittis.</p>
           </div>
-
-          {/* Image Section */}
           <div className="col-md-5 col-12 order-md-2 order-1">
-            <img
-              className="mt-4"
-              src={suvcar}
-              width="100%"
-              alt="SUV"
-            />
+            <img className="mt-4" src={suvcar} width="100%" alt="SUV" />
           </div>
-
         </Row>
       </Container>
 
-
-      {/* CHOOSE FROM 1,200 NEW CARS */}
       <Container fluid className="pt-md-3 pt-3 mt-md-5 mt-3 bg-light pb-5 overflow-hidden">
         <Row className="mt-5 g-lg-4 g-2">
           {cars.map((car, index) => (
@@ -125,42 +95,25 @@ const Suv = () => {
         </Row>
       </Container>
 
-
-
-      {/* RENTING IS PURE CONVENIENCE */}
       <Container fluid className="pb-5 bg-light" style={{ overflowX: "hidden" }}>
         <Row className="align-items-center">
-          {/* Left Side Text */}
           <div className="col-lg-4 col-md-6 col-12 text-center">
-            <h2 className="fs-1">
-              SMART RENTING, <br className="d-md-block d-none" />
-              SMOOTH DRIVING
-            </h2>
-            <p className="mt-4 c-g">
-              Drive your dream car effortlessly – easy booking, great prices, and zero hassle!
-            </p>
+            <h2 className="fs-1">SMART RENTING, <br className="d-md-block d-none" /> SMOOTH DRIVING</h2>
+            <p className="mt-4 c-g">Drive your dream car effortlessly – easy booking, great prices, and zero hassle!</p>
             <Button
               href="/all-cars"
-              variant=""
-              className="b-color text-white rounded-0 border-0 ps-5 pe-5 pt-3 pb-3"
+              variant="primary"
+              className="text-white rounded-0 border-0 ps-5 pe-5 pt-3 pb-3"
             >
               CHECK YOUR CAR <FaArrowRight className="ms-3" />
             </Button>
           </div>
-
-          {/* Middle Car Image */}
           <div className="col-lg-4 col-md-6 col-12">
             <img src={audimiddel} width="100%" alt="Luxury Audi Car with Advanced Technology & Performance" />
           </div>
-
-          {/* Right Side List */}
           <div className="col-lg-4 col-12">
             <ul className="p-0">
-              {[
-                "Hassle-Free Maintenance & Full Service Coverage",
-                "Easily Swap Your Car for the Latest Model",
-                "No Hidden Fees – Transparent & Predictable Costs",
-              ].map((item, index) => (
+              {["Hassle-Free Maintenance & Full Service Coverage", "Easily Swap Your Car for the Latest Model", "No Hidden Fees – Transparent & Predictable Costs"].map((item, index) => (
                 <div key={index} className="d-flex align-items-center fw-bold fs-5 border-bottom_text pb-2">
                   <FaArrowCircleRight className="me-3" /> {item}
                 </div>
@@ -169,10 +122,8 @@ const Suv = () => {
           </div>
         </Row>
       </Container>
-
-
     </div>
-  )
-}
+  );
+};
 
 export default Suv;

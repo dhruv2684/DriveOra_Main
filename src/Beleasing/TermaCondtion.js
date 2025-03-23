@@ -1,13 +1,36 @@
 import React from 'react'
-import { Card, Container } from 'react-bootstrap'
+import { Card, Container, Row } from 'react-bootstrap'
 import { Helmet } from 'react-helmet'
+import bmwcommodoipsum from '../Beleasing Img/BMW_COMMODO_IPSUM.jpeg'
+import lamborghinirutrumlibero from '../Beleasing Img/LAMBORGHINI RUTRUM LIBERO.jpeg'
+import { Link } from 'react-router-dom'
+import { FaArrowRight } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
+
+
+const cars = [
+    {
+        name: "BMW COMMODO IPSUM",
+        price: "$1,990.00",
+        link: "/bmw-commodo-ipsum",
+        img: bmwcommodoipsum,
+    },
+    {
+        name: "LAMBORGHINI RUTRUM LIBERO",
+        price: "$13,200.00",
+        link: "/lamborghini-rutrum-libero",
+        img: lamborghinirutrumlibero,
+    },
+];
+
 
 const TermaCondtion = () => {
     return (
         <div>
 
             <Helmet>
-                <title>Terms and Conditions | driveOra - Luxury Car Leasing & Sales</title>
+                <title>Terms & Conditions | DriveOra - Luxury Car Leasing & Sales</title>
+
                 <meta
                     name="description"
                     content="Read the Terms and Conditions of driveOra. Understand our policies on car leasing, website usage, privacy, and more."
@@ -52,7 +75,7 @@ const TermaCondtion = () => {
                                 <h4>Limitation of Liability</h4>
                                 <ul className='ps-3' style={{ listStyleType: "'▪ '" }}>
                                     <li>We do not guarantee the accuracy, completeness, or reliability of any content on this website.</li>
-                                    <li><strong>driveOra</strong> shall not be liable for any direct, indirect, or incidental damages arising from the use of this website.</li>
+                                    <li><a href="/">driveOra</a> shall not be liable for any direct, indirect, or incidental damages arising from the use of this website.</li>
                                 </ul>
 
                                 <h4>Third-Party Links</h4>
@@ -68,27 +91,41 @@ const TermaCondtion = () => {
 
                                 <h4>Governing Law</h4>
                                 <ul className='ps-3' style={{ listStyleType: "'▪ '" }}>
-                                    <li>These terms shall be governed by and interpreted in accordance with the laws of [Your Country/State].</li>
+                                    <li>These terms shall be governed by and interpreted in accordance with the laws of .</li>
                                 </ul>
 
                                 <h4>Contact Us</h4>
                                 <ul className='ps-3' style={{ listStyleType: "'▪ '" }}>
-                                    <li>If you have any questions about these Terms and Conditions, please contact us at [Your Contact Information].</li>
+                                    <li>If you have any questions about these Terms and Conditions, please contact us at <a href="">[Privacy Policy]</a>.</li>
                                 </ul>
                             </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-lg-4 col-12 ">
-                        <Card className="shadow-lg p-4 border-0">
-                            <Card.Body>
-                                <h1 className="text-center mb-4">Most Popular Cars in driveOra</h1>
-                                <p className="text-center text-muted">Discover the top luxury cars available on driveOra.</p>
-                                <ul className='ps-3' style={{ listStyleType: "'▪ '" }}>
-                                    <li><strong>Rolls-Royce Phantom</strong> – The epitome of luxury and performance.</li>
-                                    <li><strong>Lamborghini Aventador</strong> – Experience speed and style like never before.</li>
-                                </ul>
-                            </Card.Body>
-                        </Card>
+                    <div className="col-lg-4 col-12 my-5">
+                        <h2 className="text-center mb-4">Most Popular Cars in driveOra</h2>
+                        <p className="text-center text-muted">Discover the top luxury cars available on driveOra.</p>
+                        {cars.map((car, index) => (
+                            <div key={index} className="">
+                                <div className="bg-white pb-4 position-relative hov-link">
+                                    <Link to={car.link}>
+                                        <img src={car.img} width="100%" alt={car.name} />
+                                    </Link>
+                                    <Link to={car.link} className="link-pos bg-white p-2 rounded-circle">
+                                        <FaLink className="text-dark" />
+                                    </Link>
+                                    <div className="pt-4 ms-4 me-4">
+                                        <h5>{car.name}</h5>
+                                        <p className="c-g">{car.price}</p>
+                                        <div className="d-flex border-top pt-3 align-items-center justify-content-between">
+                                            <p className="mb-0">Check details</p>
+                                            <Link to={car.link}>
+                                                <FaArrowRight className="text-dark" />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
 
 

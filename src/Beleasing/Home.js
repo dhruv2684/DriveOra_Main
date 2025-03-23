@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { Suspense } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import sedan from '../Beleasing Img/sedan car.webp'
 import hatchback from '../Beleasing Img/hatchback car.webp'
@@ -40,7 +40,7 @@ const Home = () => {
 
       <Helmet>
         {/* Page Title */}
-        <title>DriveOra Luxury Cars for Lease & Sale | Best Car Deals & Offers 2025</title>
+        <title>DriveOra | Luxury Cars for Lease & Sale – Best Deals 2025</title>
 
         {/* Meta Description & Keywords */}
         <meta

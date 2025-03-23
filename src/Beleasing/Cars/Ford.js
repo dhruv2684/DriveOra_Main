@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom/cjs/react-router-dom'
+import { Link } from "react-router-dom";
+
 import Button from 'react-bootstrap/Button';
 //icon
 import { FaArrowRight } from "react-icons/fa";

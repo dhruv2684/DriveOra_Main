@@ -19,7 +19,8 @@ const About = () => {
     <div>
 
       <Helmet>
-        <title>About Us - Trusted Car Leasing Experts | 15+ Years of Excellence</title>
+      <title>About Us - Trusted Luxury Car Leasing Experts | 15+ Years of Excellence</title>
+
         <meta
           name="description"
           content="Learn about our 15+ years of expertise in luxury car leasing & sales. Trusted by thousands, we offer the best deals on top car brands!"
