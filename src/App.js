@@ -79,7 +79,7 @@ function Layout() {
 
 function App() {
   useEffect(() => {
-    document.title = "Luxury Cars";
+    document.title = "DriveOra Luxury Cars";
   }, []);
 
   return (
